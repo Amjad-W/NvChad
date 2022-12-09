@@ -150,7 +150,7 @@ M.lspconfig = {
       "lsp definition",
     },
 
-    ["K"] = {
+    ["gh"] = {
       function()
         vim.lsp.buf.hover()
       end,
@@ -284,7 +284,7 @@ M.telescope = {
 
     -- git
     ["<leader>cm"] = { "<cmd> Telescope git_commits <CR>", "git commits" },
-    ["<leader>gt"] = { "<cmd> Telescope git_status <CR>", "git status" },
+    ["<leader>gs"] = { "<cmd> Telescope git_status <CR>", "git status" },
 
     -- pick a hidden term
     ["<leader>pt"] = { "<cmd> Telescope terms <CR>", "pick hidden term" },
