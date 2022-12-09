@@ -1,7 +1,6 @@
 local plugins = {
-
   ["nvim-lua/plenary.nvim"] = { module = "plenary" },
-
+  ["tpope/vim-obsession"] = {},
   ["lewis6991/impatient.nvim"] = {},
 
   ["wbthomason/packer.nvim"] = {
@@ -181,6 +180,10 @@ local plugins = {
     end,
   },
 
+  ["nvim-telescope/telescope-fzf-native.nvim"] = {
+    run = "make"
+  },
+
   ["nvim-telescope/telescope.nvim"] = {
     cmd = "Telescope",
     config = function()
@@ -190,6 +193,7 @@ local plugins = {
       require("core.utils").load_mappings "telescope"
     end,
   },
+
 
   -- Only load whichkey after all the gui
   ["folke/which-key.nvim"] = {
