@@ -1,4 +1,17 @@
 return {
+  ["tpope/vim-surround"] = {},
+  ["tpope/vim-obsession"] = {
+    config = require "custom.plugins.other".obsession
+  },
+  ["mattn/webapi-vim"] = {},
+  ["mattn/vim-gist"] = {
+    config = require "custom.plugins.other".gist,
+    cmd = { "Gist" },
+    -- From docs: 
+    -- Plugins specified in requires are removed when no active plugins require them.
+    requires = "vim-webapi"
+  },
+
   ["neovim/nvim-lspconfig"] = {
     config = function()
       require "plugins.configs.lspconfig"
@@ -54,6 +67,7 @@ return {
     end,
   },
   ["simrat39/rust-tools.nvim"] = {
+    ft = { "rust" },
     after = "nvim-lspconfig",
     config = function()
       require "custom.plugins.rust-tools"

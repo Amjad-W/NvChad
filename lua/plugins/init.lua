@@ -1,9 +1,6 @@
 local plugins = {
   ["nvim-lua/plenary.nvim"] = { module = "plenary" },
-  ["tpope/vim-obsession"] = {},
   ["lewis6991/impatient.nvim"] = {},
-  ["mattn/vim-gist"] = {},
-  ["tpope/vim-surround"] = {},
 
   ["wbthomason/packer.nvim"] = {
     cmd = require("core.lazy_load").packer_cmds,
