@@ -4,6 +4,7 @@ end, 0)
 
 require "core"
 require "core.options"
+require "custom.options"
 
 -- setup packer + plugins
 local fn = vim.fn
