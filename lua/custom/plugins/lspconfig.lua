@@ -23,3 +23,10 @@ for _, lsp in ipairs(servers) do
     capabilities = capabilities,
   }
 end
+
+-- local omnisharp_bin = "$HOME/.local/share/nvim/mason/bin/omnisharp"
+lspconfig["omnisharp"].setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  cmd = { "omnisharp" }, -- We can do this because cmd omnisharp exists in vim.env
+}

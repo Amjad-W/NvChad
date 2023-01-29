@@ -11,7 +11,7 @@ return {
     -- Plugins specified in requires are removed when no active plugins require them.
     requires = "vim-webapi"
   },
-
+  ["WhoIsSethDaniel/toggle-lsp-diagnostics.nvim"] = {},
   ["neovim/nvim-lspconfig"] = {
     config = function()
       require "plugins.configs.lspconfig"

@@ -29,7 +29,6 @@ cmp_window.info = function(self)
   info.scrollable = false
   return info
 end
-
 local options = {
   window = {
     completion = {
